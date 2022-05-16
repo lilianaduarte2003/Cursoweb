@@ -3,7 +3,7 @@
 // Funciones matemáticas:
 
 // echo(pi()); // 3.1415926535898
-$radio = 15;
+$radio = 16;
 $perimetro = 2*pi()*$radio;
 // echo $perimetro;
 
