@@ -16,6 +16,8 @@ $bar = "barbaz";
 
 print "foo es $foo"; // foo es foobar
 print '<br>';
+print '<br>';
+
 // También se pueden usar arrays
 $bar = array("value" => "foo");
 
