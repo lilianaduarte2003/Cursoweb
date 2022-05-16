@@ -30,5 +30,6 @@ $foo->printItem('baz'); // Salida: 'Foo: baz'
 $foo->printPHP();       // Salida: 'PHP is great' 
 $bar->printItem('baz'); // Salida: 'Bar: baz'
 $bar->printPHP();       // Salida: 'PHP is great'
+// comentario '
 
 ?>
