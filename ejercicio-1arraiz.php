@@ -2,7 +2,7 @@
 <?php 
 
 # Los arrays multidimensionales nos permiten tener arrays dentro de otros arrays, como una MATRIZ.
-$hola = "Hola";
+$hola = "Hola mundo";
 
 $amigos = array(
 	array('Marc', 35, true),
