@@ -6,7 +6,7 @@ $hola = "Hola";
 $amigos = array(
 	array('Marc', 35, true),
 	array('Héctor', 1, 3.14),
-	array('Daniel', 38, $hola) //incluso puede tener otra variable dentro
+	array('Maria', 38, $hola) //incluso puede tener otra variable dentro
 );
 
 # En este ejemplo accedemos primero al array amigos y luego al primer elemento dentro de amigos, despues accedemos al primer valor del array.
