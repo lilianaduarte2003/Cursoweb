@@ -3,10 +3,11 @@
 // Funciones matemáticas:
 
 // echo(pi()); // 3.1415926535898
-$radio = 16;
+//$radio = 18;
 $perimetro = 2*pi()*$radio;
-// echo $perimetro;
-
+ echo $perimetro;
+$perimetro = 10;
+$radio = P/2*pi();
 // echo(min(0, 150, 30, 20, -8, -200));  // -200
 // echo(max(0, 150, 30, 20, -8, -200));  // 150
 
@@ -29,6 +30,10 @@ echo(floor(5) . "<br>");
 echo(floor(5.1) . "<br>");
 echo(floor(-5.1) . "<br>");
 echo(floor(-5.9));
+// se usa constantes de pi
+$perimetro = 100;
+$radio = $perimetro/(2*M_PI);
+echo $radio;
 
 // echo(rand());
 // echo(rand(10, 100));
@@ -115,5 +120,7 @@ PHP_ROUND_HALF_DOWN	    2	                    Mitades redondas hacia abajo
 PHP_ROUND_HALF_EVEN	    3	                    Redondear mitades a números pares
 PHP_ROUND_HALF_ODD	    4	                    Redondear mitades a números impares
 */
-
+$perimetro = 100;
+$radio = $perimetro/(2*M_PI);
+echo $radio;
 ?>
