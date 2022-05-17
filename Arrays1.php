@@ -17,6 +17,7 @@ $array = array(
 );
 echo $array["1"] . '<br>';
 echo $array["2"] . '<br>';
+echo $<br>;
 echo $array["1.5"] . '<br>';
 echo $array["booleano"] . '<br>';
 var_dump($array);
