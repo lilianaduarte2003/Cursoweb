@@ -22,7 +22,7 @@
 
     $persona = new Persona();
     $persona->guardar('Jose', 'Fernández');
-    $persona->guardar('Arnau', 'Garcia');
+    $persona->guardar('Pedro', 'Garcia');
     $persona->mostrar();
 
 ?>
