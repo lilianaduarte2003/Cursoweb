@@ -16,7 +16,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="recibe-post.php" method="post"> <!-- con action le decimos donde guarda los datos -->
+    <form action="recibe-post.php" method="post"> <!-- con action le decimos donde guarda los datos y no lo muestra arriba en el navegador http://127.0.0.1/Cursoweb/formularios/recibe-post.php-->
         <input type="text" placeholder="Nombre" name="nombre" id=""> <!-- el value lo define el usuario -->
         <br>
         <label for="mujer">Mujer</label> <!-- El for del label se relaciona con id del input -->

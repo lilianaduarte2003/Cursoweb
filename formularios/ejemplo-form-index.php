@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="recibe-get.php" method="get"> <!-- con action le decimos donde guarda los datos; recibe-get=se muestran los datos en otro archivo -->
+    <form action="recibe-get.php" method="get"> <!-- con action le decimos donde guarda los datos; recibe-get=se muestran los datos en otro archivo, muestra arriba http://127.0.0.1/Cursoweb/formularios/recibe-get.php?nombre=liliana&sexo=mujer&fecha=2001&terminos=ok -->
         <input type="text" placeholder="Nombre" name="nombre" id=""> <!-- el value lo define el usuario -->
         <br>
         <label for="mujer">Mujer</label> <!-- El for del label se relaciona bon id del input -->
