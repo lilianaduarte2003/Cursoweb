@@ -57,8 +57,8 @@ if (isset($_POST['submit'])) { //isset= establecer ; submit= enviar
         <br>
         <input type="text" name="email" placeholder="Email" id=""> <!--Tipo normal type="email"-->
         <br>
-        <?php if(!empty($erroresnombre)): ?>
-            <div class="error"><?php echo $errorescorreo; ?></div>
+        <?php if(!empty($errores)): ?>
+            <div class="error"><?php echo $errores; ?></div>
         <?php endif; ?>
             
         <input type="submit" name="submit" value="Enviar formulario" > <!--submit tiene un valor hemos echo click en el buton"-->
