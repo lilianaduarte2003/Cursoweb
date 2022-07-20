@@ -1,8 +1,8 @@
 <?php
 
-if(!$_GET && !$_POST) {
-    header('Location: http://localhost/cursowebetif2022/PHP/formularios/formulario.php'); //Carpeta y archivo para rellenar el form correcto
-}
+//if(!$_GET && !$_POST) {
+   // header('Location: http://localhost/cursowebetif2022/PHP/formularios/formulario.php'); //Carpeta y archivo para rellenar el form correcto
+//}
 // print_r($_SERVER);
 // echo "<br> -------------------------------<br>";
 // var_dump($_SERVER);
