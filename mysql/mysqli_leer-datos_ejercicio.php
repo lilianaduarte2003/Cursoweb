@@ -8,22 +8,22 @@ $conexion = new mysqli('localhost', 'root', '', 'prueba_mysqli');
 if ($conexion->connect_errno){
 	die('Lo siento hubo un problema con el servidor');
 } else {
-	// $id = isset($_GET['id']) ? $_GET['id'] : 1;
-	// $sql = "SELECT * FROM usuarios WHERE ID = $id";
+	//$id = isset($_GET['id']) ? $_GET['id'] : 1;
+	//$sql = "SELECT * FROM usuarios WHERE id = $id";
 	$sql = "SELECT * FROM ejerciciocreate";
 	$resultado = $conexion->query($sql);
 	
 	if($resultado->num_rows){
-		 //echo '<pre>';
-		 //var_dump($resultado->fetch_assoc());
+		// echo '<pre>';
+		// var_dump($resultado->fetch_assoc());
 		// echo $resultado->fetch_assoc()['nombre'];
-		 //echo '</pre>';
+		// echo '</pre>';
 
 		while($fila = $resultado->fetch_assoc()){
-			echo $fila['id'] . ' - ' . $fila['nombre'] .  $fila['edad'] .'<br />';
+			echo $fila['ID'] . ' - ' . $fila['nombre']. ' - ' . $fila['edad'] . '<br />';
 		}
 
 	} else {
 		echo 'No hay datos';
 	}
-}
+} 

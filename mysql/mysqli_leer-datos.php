@@ -8,16 +8,16 @@ $conexion = new mysqli('localhost', 'root', '', 'heidisql_curso');
 if ($conexion->connect_errno){
 	die('Lo siento hubo un problema con el servidor');
 } else {
-	// $id = isset($_GET['id']) ? $_GET['id'] : 1;
-	// $sql = "SELECT * FROM usuarios WHERE ID = $id";
+	//$id = isset($_GET['id']) ? $_GET['id'] : 1;
+	//$sql = "SELECT * FROM usuarios WHERE id = $id";
 	$sql = "SELECT * FROM usuarios";
 	$resultado = $conexion->query($sql);
 	
 	if($resultado->num_rows){
-		 echo '<pre>';
-		 var_dump($resultado->fetch_assoc());
-		 echo $resultado->fetch_assoc()['nombre'];
-		 echo '</pre>';
+		// echo '<pre>';
+		// var_dump($resultado->fetch_assoc());
+		// echo $resultado->fetch_assoc()['nombre'];
+		// echo '</pre>';
 
 		while($fila = $resultado->fetch_assoc()){
 			echo $fila['id'] . ' - ' . $fila['nombre'] . '<br />';
@@ -26,4 +26,4 @@ if ($conexion->connect_errno){
 	} else {
 		echo 'No hay datos';
 	}
-}
+} 

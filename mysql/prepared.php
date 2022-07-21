@@ -1,23 +1,23 @@
 <?php
-$conexion = new mysqli('localhost', 'root', '', 'prueba_mysqli');
+$conexion = new mysqli('localhost', 'root', '', 'heidisql_curso');
 
 if ($conexion->connect_errno){
 	die('Lo siento hubo un problema con el servidor');
 } else {
-	$statement = $conexion->prepare("INSERT INTO ejerciciocreate (ID, nombre, edad) VALUES(?, ?, ?)");
+	$statement = $conexion->prepare("INSERT INTO usuarios (id, nombre) VALUES(?, ?)");
 	
 	// Remplazamos los placeholder ? con los valores que queremos usar.
 		// Una S por placeholder que tengamos.
 		// s = string
 		// i = integer
 		// d = double
-	$statement->bind_param('ssi', $id, $nombre, $edad);
+	$statement->bind_param('ss', $id, $nombre);
 	$id = NULL;
 
 	// Comprobamos que hayamos pasado un nombre por URL
-	if(isset($_GET['nombre']) && isset($_GET['edad'])){
+	if(isset($_GET['nombre']) ){
 		$nombre = $_GET['nombre'];
-		$edad = $_GET['edad'];
+		
 	}
 
 	// Ejecutamos la sentencia.
